@@ -6,7 +6,7 @@ import json
 
 views = Blueprint('views', __name__)
 
-
+# create REST API methods
 @views.route('/', methods=['GET', 'POST'])
 @login_required
 def home():
