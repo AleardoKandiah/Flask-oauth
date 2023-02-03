@@ -34,7 +34,7 @@ def logout():
     logout_user()
     return redirect(url_for('auth.login'))
 
-# decorator to define route
+# decorator to define route 
 @auth.route('/sign-up', methods=['GET', 'POST'])
 def sign_up():
     if request.method == 'POST':
