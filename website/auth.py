@@ -7,7 +7,7 @@ from flask_login import login_user, login_required, logout_user, current_user
 
 auth = Blueprint('auth', __name__)
 
-# handle both GET and POST requests
+# handle both GET and POST requests 
 @auth.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
